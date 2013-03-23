@@ -1,0 +1,23 @@
+{
+  "name"          : "edge-registery",
+  "description"   : "Access windows registery",
+  "keywords"      : ["windows", "registery", "edge"],
+  "repository"    : "git://github.com/alexanderbeletsky/edge-registery.git",
+  "author"        : "Alexander Beletsky <https://github.com/alexanderbeletsky>",
+  "contributors"  : "Listed at <https://github.com/alexanderbeletsky/edge-registery/contributors>",
+  "dependencies"  : {
+    "edge": "~0.7",
+  },
+  "scripts": {
+    "test": "grunt mocha"
+  },
+  "version"       : "0.0.1",
+  "devDependencies": {
+    "grunt": "0.4.0",
+    "grunt-contrib-jshint": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-mocha": "~0.2.3",
+    "grunt-rigger": "~0.4.0",
+    "grunt-contrib-concat": "~0.1.3"
+  }
+}
