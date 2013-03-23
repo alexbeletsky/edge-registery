@@ -7,27 +7,27 @@
 Install npm package,
 
 ```
-    npm install edge-registery
+npm install edge-registery
 ```
 
 Read and write registery values,
 
 ```js
-    var registery = require('edge-registery');
+var registery = require('edge-registery');
 
-    registery.write({keyName: 'HKEY_CURRENT_USER\\Environment', valueName: 'MyCustomValue', value: 1050 }, function (err) {
+registery.write({keyName: 'HKEY_CURRENT_USER\\Environment', valueName: 'MyCustomValue', value: 1050 }, function (err) {
+    if (err) {
+        throw new Error(err);
+    }
+
+    registery.read({keyName: 'HKEY_CURRENT_USER\\Environment', valueName: 'MyCustomValue'}, function (err, value) {
         if (err) {
             throw new Error(err);
         }
 
-        registery.read({keyName: 'HKEY_CURRENT_USER\\Environment', valueName: 'MyCustomValue'}, function (err, value) {
-            if (err) {
-                throw new Error(err);
-            }
-
-            console.log(value);
-        });
+        console.log(value);
     });
+});
 ```
 
 # Licence (MIT License)
