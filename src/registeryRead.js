@@ -1,6 +1,6 @@
-var edge = require('../lib/edge');
+var edge = require('edge');
 
-var readRegistery = edge.func(function () {/*
+module.exports = edge.func(function () {/*
         using System;
         using System.Collections.Generic;
         using System.Threading.Tasks;
@@ -30,5 +30,3 @@ var readRegistery = edge.func(function () {/*
         }
     */}
 );
-
-module.exports = readRegistery;

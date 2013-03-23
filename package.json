@@ -6,12 +6,12 @@
   "author"        : "Alexander Beletsky <https://github.com/alexanderbeletsky>",
   "contributors"  : "Listed at <https://github.com/alexanderbeletsky/edge-registery/contributors>",
   "dependencies"  : {
-    "edge": "~0.7",
+    "edge": "~0.7"
   },
   "scripts": {
     "test": "grunt mocha"
   },
-  "version"       : "0.0.1",
+  "version": "0.0.1",
   "devDependencies": {
     "grunt": "0.4.0",
     "grunt-contrib-jshint": "~0.3.0",
